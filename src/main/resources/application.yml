@@ -21,7 +21,7 @@ spring:
   jpa:
     open-in-view: true
     hibernate:
-      ddl-auto:  update # create 데이터를 인서트했는데 나중에 다시 서버를 재실행하면 insert한 데이터가 사라진다
+      ddl-auto:  update # create 데이터를 인서트했는데 나중에 다시 서버를 재실행하면 insert한 데이터가 사라진다 , none
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: true
