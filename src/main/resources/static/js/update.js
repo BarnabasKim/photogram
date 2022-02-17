@@ -2,7 +2,7 @@
 function update(userId,event) {
 	event.preventDefault(); // form 태그 액션을 막기! 
 	
-	let data  =$("#profileUpdate").serialize();
+	let data  =$("#profileUpdate").serialize(); // key =value
 	
 	console.log(data);
 	
