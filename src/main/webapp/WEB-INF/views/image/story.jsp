@@ -8,6 +8,7 @@
 		<article class="story-list" id="storyList">
 
 <!--스토리 아이템-->
+
 <!-- 스토리 아이템 끝 -->
 
 		</article>
