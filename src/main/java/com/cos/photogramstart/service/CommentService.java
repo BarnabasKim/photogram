@@ -27,7 +27,7 @@ public class CommentService {
 		Image image = new Image();
 		image.setId(imageId);
 		
-		User userEntity = userRepository.findById(userId).orElseThrow(()-> {
+		User userEntity = userRepository.findById(userId).orElseThrow(()->{
 			throw new CustomApiException("유저 아이디를 찾을 수 없습니다.");
 		});
 		
@@ -42,7 +42,13 @@ public class CommentService {
 	
 	
 	@Transactional
-	public void 댓글삭제() {
+	public void 댓글삭제(int id) {
+		try {
+			commentRepository.deleteById(id);
+		} catch (Exception e) {
+			throw new CustomApiException(e.getMessage());
+		}
+		
 		
 	}
 }
